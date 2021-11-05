@@ -8,7 +8,7 @@ function olhar(){
         lang: "pt-PT",
         continuous:true,//Sempre escutando
         listen:true,
-        debug:true,//Imprimir no console.log
+        debug:false,//Imprimir no console.log
         speed:1,
     }
     ice.initialize(config)
@@ -33,6 +33,7 @@ function olhar(){
     }
     ice.addCommands(piadas)
     //#endregion
+
 
     //#region HORA ATUAL
     //------------ time horas
