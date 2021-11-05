@@ -1,0 +1,35 @@
+{
+	"manifest_version": 2,
+	"name": "Ice Assitent",
+	"version": "21.10.4",
+    "description": "Assistente virtual",
+    "icons": {
+		"48": "img/android-icon-48x48.png",
+		"120": "img/apple-icon-120x120.png"
+	},
+    "page_action": {
+        "default_icon": { 
+            "36" : "img/android-icon-36x36.png",
+            "48" : "img/android-icon-48x48.png"
+        },
+        "default_title": "ICE Assistent",
+        "default_popup": "index.html"
+    },
+    "permissions": [ 
+        "tabs",
+        "declarativeContent",
+        "activeTab"
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "content_scripts": [ {
+        "js": [
+            "ice/ice.js", 
+            "ice/artyom.window.min.js",
+            "ice/jquery-3.6.0.min.js"
+        ],
+        "matches": ["<all_urls>"]
+    } ]
+}
