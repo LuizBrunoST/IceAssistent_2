@@ -8,7 +8,7 @@ function olhar(){
         lang: "pt-PT",
         continuous:true,//Sempre escutando
         listen:true,
-        debug:false,//Imprimir no console.log
+        debug:true,//Imprimir no console.log
         speed:1,
     }
     ice.initialize(config)
@@ -212,7 +212,7 @@ function olhar(){
             action:function(i){
                 ice.newPrompt({
                     question:"Qual perfil você quer entrar?",
-                    options:["Luiz Bruno", "Nayara", "Vagner Tatoo", "Anselma", "Cancelar"],
+                    options:["Luiz Bruno", "Cancelar"],
                     onMatch: (i) => {
                         var action
                         if(i == 0){
