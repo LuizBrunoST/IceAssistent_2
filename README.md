@@ -1,4 +1,17 @@
 # estensão ICE Assistent
+# Download
+[Baixar](https://github.com/LuizBrunoST/IceAssistent_2/releases) |
+# Como instalar
+* Clique no ícone do quebra cabeça
+![enter image description here](https://raw.githubusercontent.com/LuizBrunoST/IceAssistent_2/master/ajuda/Capturar1.PNG)
+<hr>
+* Ative a opção <b>modo do desenvolvedor</b>
+<img src="https://raw.githubusercontent.com/LuizBrunoST/IceAssistent_2/master/ajuda/Capturar2.PNG">
+<hr>
+* Clique, arraste e solta.
+<img src="https://raw.githubusercontent.com/LuizBrunoST/IceAssistent_2/master/ajuda/Capturar3.PNG">
+<hr>
+
 
 **LOG**
 
