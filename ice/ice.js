@@ -35,6 +35,11 @@ function olhar(){
     //#endregion
 
 
+    setInterval(function(){
+        ice.sayRandom(["Configurações.","Sistemas Ok.","Aviso! Uma anomalia foi detectada."])
+    },600000) //600000 10 Minutos
+
+
     //#region HORA ATUAL
     //------------ time horas
     time = {
@@ -87,17 +92,6 @@ function olhar(){
         }
     }
     ice.addCommands(dia)
-    //#endregion
-
-    //#region  voltar Pro Ice Assintent
-    iceAssitent = {
-        indexes:["voltar para assistente padrão"],
-        action: function(){
-            ice.say("Ok, Voltando!")
-            window.location.href="http://localhost/iceAssistent/"
-        }
-    }
-    ice.addCommands(iceAssitent)
     //#endregion
 
     //#region desativando a ice
