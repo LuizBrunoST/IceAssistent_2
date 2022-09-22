@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "Ice Assitent",
-	"version": "21.11.4",
+	"version": "22.9.22",
     "description": "Assistente virtual",
     "icons": {
 		"48": "img/android-icon-48x48.png",

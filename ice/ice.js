@@ -15,12 +15,24 @@ function olhar(){
 
     //############# Ice Assistent ##############
 
+    /*
     if(window.location.hostname == "localhost"){
         ice.fatality()
     }else{
         ice.initialize(config)
     }
-
+    */
+    atulizar = {
+        indexes: ['atualizar','atualizar página'],
+        action: function(){
+            ice.say("Ok!",{
+                onStart: function(){
+                    window.location.reload()
+                }
+            })
+        }
+    }
+    ice.addCommands(atulizar)
     //#region PIADAS
     piadas = {
         indexes: ["Me conte uma piada", "piada"],
@@ -196,6 +208,25 @@ function olhar(){
             }
         }
         ice.addCommands(qualeproximovideo)
+        /*
+        //################### Tela cheia
+        fullscreen = {
+            indexes:["fullscreen","tela cheia"],
+            action:function(){
+                ice.say("Ok, enquadrando.",{
+                    onStart:function(){
+                        ice.fatality()
+                        document.querySelector("video.html5-main-video").requestFullscreen()
+                    },
+                    onEnd:function(){
+                        ice.initialize(config)
+                    }
+                })
+            }
+        }
+        ice.addCommands(fullscreen)
+        */
+
         //#endregion
 
     }else if(window.location.hostname == "www.netflix.com"){
